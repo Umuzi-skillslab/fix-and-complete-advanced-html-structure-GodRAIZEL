@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Media Production</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="top">
-        <h1>Media Production Company</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div class="hero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Media Production Company</h1>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
         <h2>Professional Media Production Services</h2>
         <p>We create stunning visual content for your business needs.</p>
-    </div>
-    
-    <div class="content">
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="content-wrapper">
         <h2>What We Do</h2>
-        <p>Video production, audio recording, and multimedia solutions for businesses of all sizes.</p>
-    </div>
-    
-    <div class="bottom">
+        <p>
+          Video production, audio recording, and multimedia solutions for
+          businesses of all sizes.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <div class="footer-content">
         <p>Email: contact@mediaproduction.com</p>
         <p>Phone: 555-0123</p>
-    </div>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

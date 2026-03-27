@@ -1,40 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="top">
-        <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
-        </form>
-    </div>
-    
-    <div class="bottom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Media Production Company</h1>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-form-section">
+      <h2>Get In Touch</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+27 123 456 7890"
+            pattern="[+0-9\s]{10,15}"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            rows="5"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="service">Interested In:</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="video">Video Production</option>
+            <option value="audio">Audio Recording</option>
+            <option value="multimedia">Multimedia Solutions</option>
+          </select>
+
+          <div class="contact-method">
+            <p>Preferred Contact Method:</p>
+            <label
+              ><input
+                type="radio"
+                name="contact_method"
+                value="email"
+                checked
+              />Email</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="contact_method"
+                value="phone"
+              />Phone</label
+            >
+          </div>
+
+          <div class="subscribe">
+            <label
+              ><input type="checkbox" name="subscribe" /> Subscribe to
+              newsletter</label
+            >
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer class="bottom">
+      <div class="footer-content">
         <p>Email: contact@mediaproduction.com</p>
-    </div>
-</body>
+        <p>Phone: 555-0123</p>
+      </div>
+    </footer>
+  </body>
 </html>

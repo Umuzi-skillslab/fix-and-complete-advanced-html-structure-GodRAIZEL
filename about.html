@@ -1,75 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>About Us</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about our media production team, services, and portfolio."
+    />
+    <meta name="author" content="Media Production Company" />
+
+    <title>About Us - Media Production</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header class="top">
       <h1>Media Production Company</h1>
+
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <label for="menu-toggle" class="menu-icon">
+        <span class="visually-hidden">Toggle navigation menu</span>
+        &#9776;
+      </label>
 
       <nav>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
           <li><a href="media.html">Media</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="about-hero">
-      <div class="about-hero-content">
-        <h2>Our Team</h2>
-        <p>
-          We are a team of experienced media professionals dedicated to creating
-          high-quality content.
-        </p>
-      </div>
-    </section>
-
-    <section class="services-section">
-      <h2>Services</h2>
-
-      <div class="services-container">
-        <article class="service-card">
-          <h3>Video Production</h3>
+    <main>
+      <section class="about-hero">
+        <div class="about-hero-content">
+          <h2>Our Team</h2>
           <p>
-            Professional video creation for corporate and creative projects.
+            We are a team of experienced media professionals dedicated to
+            creating high-quality content.
           </p>
-        </article>
+        </div>
+      </section>
 
-        <article class="service-card">
-          <h3>Audio Recording</h3>
-          <p>Studio-quality audio production and editing services.</p>
-        </article>
+      <section class="services-section">
+        <h2>Services</h2>
 
-        <article class="service-card">
-          <h3>Multimedia Solutions</h3>
-          <p>
-            High-quality multimedia content that helps your business stand out
-            and connect with your audience.
-          </p>
-        </article>
-      </div>
-    </section>
+        <div class="services-container">
+          <article class="service-card">
+            <h3>Video Production</h3>
+            <p>
+              Professional video creation for corporate and creative projects.
+            </p>
+          </article>
 
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <img src="images/work1.jpg" alt="Media project 1" />
-        <img src="images/work2.jpg" alt="Media project 2" />
-        <img src="images/work3.jpg" alt="Media project 3" />
-      </div>
-    </section>
+          <article class="service-card">
+            <h3>Audio Recording</h3>
+            <p>Studio-quality audio production and editing services.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Multimedia Solutions</h3>
+            <p>
+              High-quality multimedia content that helps your business stand out
+              and connect with your audience.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio-grid">
+          <img src="images/work1.jpg" alt="Video production project" />
+          <img src="images/work2.jpg" alt="Audio recording setup" />
+          <img src="images/work3.jpg" alt="Multimedia editing workspace" />
+        </div>
+      </section>
+    </main>
 
     <footer class="bottom">
       <div class="footer-content">
-        <p>Email: contact@mediaproduction.com</p>
-        <p>Phone: 555-0123</p>
+        <p>
+          Email:
+          <a href="mailto:contact@mediaproduction.com">
+            contact@mediaproduction.com
+          </a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+275550123"> 555-0123 </a>
+        </p>
       </div>
     </footer>
   </body>

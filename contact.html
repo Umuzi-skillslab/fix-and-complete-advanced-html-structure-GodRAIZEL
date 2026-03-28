@@ -1,120 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Contact</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact our media production company for video, audio, and multimedia services."
+    />
+    <meta name="author" content="Media Production Company" />
+
+    <title>Contact - Media Production</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header class="top">
       <h1>Media Production Company</h1>
+
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <label for="menu-toggle" class="menu-icon">
+        <span class="visually-hidden">Toggle navigation menu</span>
+        &#9776;
+      </label>
 
       <nav>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="media.html">Media</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="contact-form-section">
-      <h2>Get In Touch</h2>
+    <main>
+      <section class="contact-form-section">
+        <h2>Get In Touch</h2>
 
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Personal Information</legend>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
 
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
 
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-          />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
 
-          <label for="phone">Phone</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+27 123 456 7890"
-            pattern="[+0-9\s]{10,15}"
-          />
-        </fieldset>
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+27 123 456 7890"
+              pattern="[+0-9\s]{10,15}"
+            />
+          </fieldset>
 
-        <fieldset>
-          <legend>Message</legend>
+          <fieldset>
+            <legend>Message</legend>
 
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your message here..."
-            rows="5"
-            required
-          ></textarea>
-        </fieldset>
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              rows="5"
+              required
+            ></textarea>
+          </fieldset>
 
-        <fieldset>
-          <legend>Preferences</legend>
+          <fieldset>
+            <legend>Preferences</legend>
 
-          <label for="service">Interested In:</label>
-          <select id="service" name="service">
-            <option value="">Select a service</option>
-            <option value="video">Video Production</option>
-            <option value="audio">Audio Recording</option>
-            <option value="multimedia">Multimedia Solutions</option>
-          </select>
+            <label for="service">Interested In:</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option value="video">Video Production</option>
+              <option value="audio">Audio Recording</option>
+              <option value="multimedia">Multimedia Solutions</option>
+            </select>
 
-          <div class="contact-method">
-            <p>Preferred Contact Method:</p>
-            <label
-              ><input
-                type="radio"
-                name="contact_method"
-                value="email"
-                checked
-              />Email</label
-            >
-            <label
-              ><input
-                type="radio"
-                name="contact_method"
-                value="phone"
-              />Phone</label
-            >
-          </div>
+            <div class="contact-method">
+              <p>Preferred Contact Method:</p>
 
-          <div class="subscribe">
-            <label
-              ><input type="checkbox" name="subscribe" /> Subscribe to
-              newsletter</label
-            >
-          </div>
-        </fieldset>
+              <label>
+                <input
+                  type="radio"
+                  name="contact_method"
+                  value="email"
+                  checked
+                />
+                Email
+              </label>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+              <label>
+                <input type="radio" name="contact_method" value="phone" />
+                Phone
+              </label>
+            </div>
+
+            <div class="subscribe">
+              <label>
+                <input type="checkbox" name="subscribe" />
+                Subscribe to newsletter
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
 
     <footer class="bottom">
       <div class="footer-content">
-        <p>Email: contact@mediaproduction.com</p>
-        <p>Phone: 555-0123</p>
+        <p>
+          Email:
+          <a href="mailto:contact@mediaproduction.com">
+            contact@mediaproduction.com
+          </a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+275550123"> 555-0123 </a>
+        </p>
       </div>
     </footer>
   </body>

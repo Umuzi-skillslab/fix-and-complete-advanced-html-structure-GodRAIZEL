@@ -1,105 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Media Gallery</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our media gallery including video production, audio samples, and client testimonials."
+    />
+    <meta name="author" content="Media Production Company" />
+    <title>Media Gallery - Media Production</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header class="top">
       <h1>Media Production Company</h1>
+
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <label for="menu-toggle" class="menu-icon">
+        <span class="visually-hidden">Toggle navigation menu</span>
+        &#9776;
+      </label>
 
       <nav>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="media.html">Media</a></li>
+          <li><a href="media.html" aria-current="page">Media</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="video-showcase">
-      <h2>Video Showcase</h2>
+    <main>
+      <section class="video-showcase">
+        <h2>Video Showcase</h2>
 
-      <div class="videos-container">
-        <video controls width="640" height="360" preload="metadata">
-          <source src="media/sample1.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
+        <div class="videos-container">
+          <video controls preload="metadata">
+            <source src="media/sample1.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
 
-        <video controls width="640" height="360" preload="metadata">
-          <source src="media/sample2.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-    </section>
+          <video controls preload="metadata">
+            <source src="media/sample2.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </section>
 
-    <section class="audio-sample">
-      <h2>Audio Sample</h2>
+      <section class="audio-sample">
+        <h2>Audio Sample</h2>
 
-      <audio controls preload="metadata">
-        <source src="media/sample-audio.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+        <audio controls preload="metadata">
+          <source src="media/sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
 
-      <p>Listen to our audio production quality.</p>
-    </section>
+        <p>Listen to our audio production quality.</p>
+      </section>
 
-    <section class="location-section">
-      <h2>Location</h2>
+      <section class="location-section">
+        <h2>Location</h2>
 
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.123456789!2d28.0435!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9508a2c0b7b0ab%3A0x1234567890abcdef!2s123%20Media%20Street!5e0!3m2!1sen!2sza!4v1690000000000!5m2!1sen!2sza"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.123456789!2d28.0435!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9508a2c0b7b0ab%3A0x1234567890abcdef!2s123%20Media%20Street!5e0!3m2!1sen!2sza!4v1690000000000!5m2!1sen!2sza"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing our studio location"
+          ></iframe>
+        </div>
 
-      <p>Visit our studio at 123 Media Street</p>
-    </section>
+        <p>Visit our studio at 123 Media Street</p>
+      </section>
 
-    <section class="testimonials">
-      <h2>Client Testimonials</h2>
+      <section class="testimonials">
+        <h2>Client Testimonials</h2>
 
-      <div class="testimonial-cards">
-        <figure>
-          <img src="images/client1.jpg" alt="Client 1 photo" />
-          <figcaption>
-            <p>
-              "Amazing video production! The team delivered beyond our
-              expectations."
-            </p>
-            <strong>- Jane Doe, CEO</strong>
-          </figcaption>
-        </figure>
+        <div class="testimonial-cards">
+          <figure>
+            <img src="images/client1.jpg" alt="Portrait of client Jane Doe" />
+            <figcaption>
+              <p>
+                "Amazing video production! The team delivered beyond our
+                expectations."
+              </p>
+              <strong>- Jane Doe, CEO</strong>
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img src="images/client2.jpg" alt="Client 2 photo" />
-          <figcaption>
-            <p>
-              "Audio quality was top-notch and professional. Highly recommend!"
-            </p>
-            <strong>- John Smith, Producer</strong>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
+          <figure>
+            <img src="images/client2.jpg" alt="Portrait of client John Smith" />
+            <figcaption>
+              <p>
+                "Audio quality was top-notch and professional. Highly
+                recommend!"
+              </p>
+              <strong>- John Smith, Producer</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
 
-   <footer class="bottom">
+    <footer class="bottom">
       <div class="footer-content">
-        <p>Email: contact@mediaproduction.com</p>
-        <p>Phone: 555-0123</p>
+        <p>
+          Email:
+          <a href="mailto:contact@mediaproduction.com">
+            contact@mediaproduction.com
+          </a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+275550123"> 555-0123 </a>
+        </p>
       </div>
     </footer>
-
   </body>
 </html>
